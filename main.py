@@ -1,7 +1,7 @@
 # Fake News Classifer with Naive Bayes
-# Written by Gautam Mittal, Naveen Ram, Ryan Featherman
+# Written by Pranav Eranki
 # Dataset of approx. 250 articles
-# December 8, 2017
+# 10/7/2018
 
 from __future__ import division
 from os import listdir
@@ -78,7 +78,7 @@ def test():
                         count += 1
                 else:
                         false_p += 1
-                        
+
         for i in tqdm(range(len(TEST_FAKE))):
                 if predict(TEST_FAKE[i]) == 0:
                         count += 1
